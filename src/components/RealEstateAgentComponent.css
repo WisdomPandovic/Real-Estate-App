@@ -1,0 +1,151 @@
+.bk-green{
+    background-color: #61CE70;
+    font-family: "Poppins", sans-serif;
+}
+
+.agent-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .agent-grid-item {
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .register-button {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+   margin: 20px 0px;
+  }
+  
+  .user-icon {
+    margin-right: 5px;
+  }
+
+
+.inquiry-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .inquiry-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-section {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  
+  .text-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .text-section h3 {
+    margin-bottom: 10px;
+  }
+  .form-section input {
+    padding: 20px;
+    width: 200px;
+    height: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+  
+  .form-section select {
+    padding: 20px;
+    width: 245px;
+    height: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+
+  @media (max-width: 768px) {
+    .inquiry-container {
+        grid-template-columns:repeat(1, 1fr);
+        width: 90%;
+        margin: auto;
+    }
+  
+    .inquiry-form {
+        grid-template-columns:repeat(1, 1fr);
+    }
+
+    .agent-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width: 98%;
+        margin: auto;
+      }
+
+      .register-button {
+        margin: 10px 0px;
+    }
+
+    .form-section select {
+        width: 640px;
+      }
+
+      .form-section input{
+        width: 600px;
+      }
+
+      .inquiry-form button {
+        padding: 10px;
+        width: 80%;
+        margin: 10px auto;
+        height: 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+        background-color: blue;
+        color: black;
+      }
+  }
+
+  @media (max-width: 480px) {
+
+    .inquiry-form{
+        display: none;
+    }
+    .form-section select {
+        width: 350px;
+      }
+
+      .form-section input{
+        width: 300px;
+      }
+  }
+
+  @media (max-width: 400px) {
+    .form-section select {
+        width: 100%;
+      }
+
+      .form-section input{
+        width: 300px;
+      }
+  }
