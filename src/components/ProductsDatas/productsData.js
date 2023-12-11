@@ -17,7 +17,7 @@ export const houseData = [
       size: 'Large',
       rooms: 12,
       availability: 'sold',
-      imageUrl: require('../../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsb2ZmaWNlN19oaWdoLWFuZ2xlX3JlYXJfc2lkZV9pbnRlcmlvcl9tb2Rlcm5fbGl2aW5nX3Jvb185YjlkYWZiNi04NTJiLTRiYWEtYWE1Mi02NDBmZjc1MzNmODNfMS5qcGc.webp'), 
+      imageUrl: require('../../images/pexels-photo-2635038.webp'), 
     },
     {
       id: 3,

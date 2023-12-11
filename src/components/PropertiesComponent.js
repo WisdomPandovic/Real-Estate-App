@@ -1,9 +1,9 @@
 import React from 'react';
 import './PropertiesComponent.css'; 
 import product1Image from '../images/pexels-photo-1571459.jpeg';
-import product2Image from '../images/pexels-photo-2507010.webp';
-import product3Image from '../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xMF9waG90b19vZl9hX21vZGVybl9ob3VzZV9pbl90aGVfY2l0eV9uYXR1cmFsX18yMDdhNWQzOC02M2E5LTRkODItOGU3NC1jYWVlZDU3MzczM2FfMS5qcGc.webp';
-import product4Image from '../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2EwMDYtdG9tZy0xOC5qcGc.webp';
+import product2Image from '../images/studio-properties (1).webp';
+import product3Image from '../images/apartment-properties (6).webp';
+import product4Image from '../images/apartment-properties (3).webp';
 import product5Image from '../images/download (2).jpg';
 import { FaEye, FaHome, FaHeart, FaBed, FaShower, FaUtensils  } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';

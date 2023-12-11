@@ -1,9 +1,10 @@
 import React from 'react';
 import '../App.css';
-import product1Image from '../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMTk1MTAyNjQ5NDktaW1hZ2Uta3liZW1xZnMuanBn.webp';
-import product2Image from '../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsb2ZmaWNlMTlfcGhvdG9faW5fZnJvbnRfbmF0dXJlX2Vjb190b3duaG91c2VfbW9kZXJuX2x1eF84OTE2NDBkNC00NGVjLTRmNWQtOTM4Ny03YzZkYjI3MTdkMGNfMS5qcGc.webp';
-import product3Image from '../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8xMF9waG90b19vZl9hX21vZGVybl9ob3VzZV9pbl90aGVfY2l0eV9uYXR1cmFsX18yMDdhNWQzOC02M2E5LTRkODItOGU3NC1jYWVlZDU3MzczM2FfMS5qcGc.webp';
-import product4Image from '../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsb2ZmaWNlN19oaWdoLWFuZ2xlX3JlYXJfc2lkZV9pbnRlcmlvcl9tb2Rlcm5fbGl2aW5nX3Jvb185YjlkYWZiNi04NTJiLTRiYWEtYWE1Mi02NDBmZjc1MzNmODNfMS5qcGc.webp';
+import { Link } from 'react-router-dom';
+import product1Image from '../images/apartment-properties (15).webp';
+import product2Image from '../images/apartment-properties (15).webp';
+import product3Image from '../images/apartment-properties (15).webp';
+import product4Image from '../images/apartment-properties (11).webp';
 import product5Image from '../images/pexels-photo-2507010.webp';
 import product6Image from '../images/pexels-photo-1571459.jpeg';
 function ApartmentTypes() {
@@ -23,13 +24,13 @@ function ApartmentTypes() {
     {
       id: 3,
       type: 'Houses',
-      properties: 28,
+      properties: 9,
       imageUrl: product3Image,
     },
     {
         id: 1,
         type: 'Studio',
-        properties: 2,
+        properties: 4,
         imageUrl: product4Image,
       },
       {
@@ -40,8 +41,8 @@ function ApartmentTypes() {
       },
       {
         id: 3,
-        type: 'Houses',
-        properties: 28,
+        type: 'ClubHouse',
+        properties: 4,
         imageUrl: product6Image,
       },
   ];
@@ -52,13 +53,15 @@ function ApartmentTypes() {
       <p>Explore all the different types of apartments so you can choose the best option for you</p>
       <div className='row'>
         {products.map(product => (
-          <div key={product.id} className='column'>
+          // <div key={product.id} className='column'>
+           <Link to={`/properties/${product.type.toLowerCase()}`} key={product.id} className='column'>
             <img src={product.imageUrl} alt={product.title} />
             <div className='text-overlay'>
               <h3>{product.type}</h3>
               <p>Properties: {product.properties}</p>
             </div>
-          </div>
+              </Link>
+          // </div>
         ))}
       </div>
     </div>

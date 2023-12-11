@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './components/pages/Home';
+import PropertyList from './components/pages/PropertyList';
 // import Properties from './pages/Properties';
 // import Search from './pages/Search'; 
 // import About from './pages/About';
@@ -14,6 +15,7 @@ const App = () => {
     <Routes>
 
     <Route path='/' element={<Home />} />  
+    <Route path="/properties/:type" element={<PropertyList/>} />
           {/* <Route path="/properties" component={Properties} />
           <Route path="/search" component={Search} />
           <Route path="/about" component={About} />
