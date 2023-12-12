@@ -94,7 +94,7 @@ function AboutUs() {
       </div>
       <div className='about-page'>
       <div className='about-wd-80'>
-        <h2>Leadership Team</h2>
+        <h2>Our Leadership Team</h2>
         <div className='leadership-grid'>
           {leadershipTeam.map(member => (
             <div key={member.id} className='team-member'>

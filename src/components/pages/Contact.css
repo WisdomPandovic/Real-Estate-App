@@ -1,0 +1,216 @@
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.contact-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .contact-text {
+    max-width: 600px;
+  }
+  
+  .contact-text h3 {
+    margin: 50px 0px;
+    color: #303441;
+  }
+
+  .contact-text p {
+   line-height: 1.5;
+   font-size: 14px;
+   color: #54595F;;
+  }
+  
+  .contact-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-text li {
+    margin-bottom: 10px;
+  }
+  
+  strong{
+    color:black;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .bk-green{
+    background-color: green;
+    color: white;
+    padding: 20px 40px;
+    font-size: 13px;
+  }
+
+  .contact-grid p span{
+    margin: 20px 0px;
+    color: #222222;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+
+  .contact-grid p {
+   
+    color: #222222;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .grid-team{
+    margin: 20px 0px;
+  }
+
+  .blu-sky p{
+    background-color: #007bff;
+    color: #fff;
+    width: 150px;
+padding: 20px;
+font-size: 10px;
+cursor: pointer;
+margin: 10px 0px;
+  }
+
+  .container {
+    position: relative;
+  }
+  
+  .banner-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 140, 186, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .text-2 {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.grid-three{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.text-c h2, .contact{
+  text-align: center;
+}
+
+.contact-background{
+  background-image: url('../../images/club-house\ \(4\).webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-background h3{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600 ;
+}
+
+.contact-background p{
+  color: #fff;
+  font-size: 10px;
+}
+
+.flexx{
+  display: flex;
+  gap: 10px;
+  /* padding: 0px 0px 40px; */
+}
+
+.contact-background .about::before {
+  content: " >"; 
+  margin-right: 5px;
+}
+
+  
+@media (max-width: 768px) {
+  .grid-three{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+}
