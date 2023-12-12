@@ -9,6 +9,7 @@ import {clubhouseData} from '../ProductsDatas/ClubHouseData';
 import {townhomeData} from '../ProductsDatas/TownHome';
 import './PropertyList.css';
 import Footer from '../Footer';
+import { FaEye, FaHome, FaHeart, FaBed, FaShower, FaUtensils  } from 'react-icons/fa'; 
 
 function PropertyList() {
   const { type } = useParams();
@@ -77,7 +78,10 @@ function PropertyList() {
     
                 {filteredProperties.map(property => (
                     <li key={`${property.id}-${property.type}`} className="property-product">
-                         <img src={property.imageUrl} alt={property.title} />
+                    <div className="image-container">
+                    <img src={property.imageUrl} alt={property.title} />
+                    <FaHeart className="heart-icon" />
+                  </div>
                          <h3>{property.title}</h3>
                          <p>Price: {property.price}</p>
                         <p>Location: {property.location}</p>
@@ -85,6 +89,7 @@ function PropertyList() {
                 ))}
 
             </ul>
+            
             {showBackToTop && (
           <button className='back-to-top' onClick={scrollToTop}>
             Back to Top

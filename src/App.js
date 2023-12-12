@@ -4,7 +4,7 @@ import Home from './components/pages/Home';
 import PropertyList from './components/pages/PropertyList';
 // import Properties from './pages/Properties';
 // import Search from './pages/Search'; 
-// import About from './pages/About';
+import AboutUs from './components/pages/AboutUs';
 // import Contact from './pages/Contact';
 // import Blog from './pages/Blog';
 // import FAQs from './pages/FAQs';
@@ -16,9 +16,10 @@ const App = () => {
 
     <Route path='/' element={<Home />} />  
     <Route path="/properties/:type" element={<PropertyList/>} />
+    <Route path="/about" element={<AboutUs/>} />
           {/* <Route path="/properties" component={Properties} />
           <Route path="/search" component={Search} />
-          <Route path="/about" component={About} />
+         
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/faqs" component={FAQs} /> */}

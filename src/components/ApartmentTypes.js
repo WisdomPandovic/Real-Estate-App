@@ -5,7 +5,7 @@ import product1Image from '../images/apartment-properties (15).webp';
 import product2Image from '../images/apartment-properties (15).webp';
 import product3Image from '../images/apartment-properties (15).webp';
 import product4Image from '../images/apartment-properties (11).webp';
-import product5Image from '../images/pexels-photo-2507010.webp';
+import product5Image from '../images/apartment-properties (10).webp';
 import product6Image from '../images/pexels-photo-1571459.jpeg';
 function ApartmentTypes() {
   const products = [

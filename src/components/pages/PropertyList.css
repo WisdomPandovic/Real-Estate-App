@@ -26,7 +26,24 @@
     padding: 0px 0px 50px;
     margin-bottom: 30px;
     width: 100%;
+    overflow: hidden;
+  transition: transform 0.3s ease-in-out;
   }
+
+  .property-product:hover {
+    transform: scale(1.1);
+  }
+
+  .property-product h3,
+.property-product p {
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-product:hover h3,
+.property-product:hover p {
+  transform: scale(1.1);
+}
 
   .wd-80{
     width: 80%;
@@ -47,6 +64,7 @@
     height: 100%;
     object-fit: cover; 
     transition: transform 0.3s ease-in-out; 
+    position: relative;
   }
 
 .back-to-top {
@@ -66,6 +84,18 @@
   background-color: #0056b3;
 }
 
+.image-container {
+  position: relative;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  font-size: 24px; 
+  cursor: pointer;
+}
 
   @media (max-width: 768px) {
     .property-list {
