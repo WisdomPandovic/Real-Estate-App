@@ -1,8 +1,7 @@
-// src/components/Contact.js
 import React from 'react';
 import Nav from '../Nav';
 import Footer from '../Footer';
-import './Contact.css'; // Import the CSS file for styling
+import './Contact.css';
 import image from '../../images/real-estate-agent (1).webp'
 import image1 from '../../images/happy-home (1).webp'
 import image2 from '../../images/happy-home (2).webp'

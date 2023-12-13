@@ -6,7 +6,7 @@ import PropertyList from './components/pages/PropertyList';
 // import Search from './pages/Search'; 
 import AboutUs from './components/pages/AboutUs';
 import Contact from './components/pages/Contact';
-// import Blog from './pages/Blog';
+import BlogPosts from './components/pages/BlogPosts';
 // import FAQs from './pages/FAQs';
 
 const App = () => {
@@ -18,11 +18,12 @@ const App = () => {
         <Route path="/properties/:type" element={<PropertyList/>} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/blog" element={<BlogPosts/>} />
           {/* <Route path="/properties" component={Properties} />
           <Route path="/search" component={Search} />
          
          
-          <Route path="/blog" component={Blog} />
+  
           <Route path="/faqs" component={FAQs} /> */}
       </Routes>
     </BrowserRouter>
