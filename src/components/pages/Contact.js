@@ -28,24 +28,26 @@ function Contact() {
           {/* Offices Location Text */}
           <div className='contact-text'>
             <h3>Offices Location</h3>
-            <ul>
-              <li>
+              <div className='hq'>
                 <strong className='bk-green'>Headquarter</strong>
-              </li>
-              <li>
-                <strong>New York Office</strong>: Address
-              </li>
-              <li>
-                <strong>California Office</strong>: Address
-              </li>
-            </ul>
+              </div>
             <p>
               Morbi mollis elit vitae elit molestie lobortis. Cras eu purus ipsum. Aliquam et ullamcorper nisl. Nam sem justo,
               sagittis sit amet sem at, mollis congue eros. Quisque vel mattis eros. Proin euismod massa id est finibus,
               rutrum ornare velit pellentesque. Ut arcu magna, interdum eget egestas eget, sagittis a libero. Donec felis tellus,
               vehicula at purus condimentum, hendrerit dictum odio. Vivamus et condimentum sapien.
             </p>
-            <p>Press & Media Inquiries: info@stylemixthemes.com.</p>
+
+            <div className='hq'>
+                <strong className='bk-blue'>New York Office</strong>
+              </div>
+            <p>
+              Morbi mollis elit vitae elit molestie lobortis. Cras eu purus ipsum. Aliquam et ullamcorper nisl. Nam sem justo,
+              sagittis sit amet sem at, mollis congue eros. Quisque vel mattis eros. Proin euismod massa id est finibus,
+              rutrum ornare velit pellentesque. Ut arcu magna, interdum eget egestas eget, sagittis a libero. Donec felis tellus,
+              vehicula at purus condimentum, hendrerit dictum odio. Vivamus et condimentum sapien.
+            </p>
+            <p>Press & Media Inquiries: info@pandaestate.com.</p>
           </div>
 
           {/* Map Section */}
@@ -53,7 +55,7 @@ function Contact() {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78244276378!2d7.367464875318339!3d9.024416368712867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1702382121067!5m2!1sen!2sng"
               width="100%"
-              height="500"
+              height="600"
               title="Office Location"
               frameBorder="0"
               allowFullScreen=""

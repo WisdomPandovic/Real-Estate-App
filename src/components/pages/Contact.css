@@ -62,8 +62,8 @@
     padding: 0;
   }
   
-  .contact-text li {
-    margin-bottom: 10px;
+  .contact-text div{
+    margin: 30px 0px;
   }
   
   strong{
@@ -74,6 +74,13 @@
 
   .bk-green{
     background-color: green;
+    color: white;
+    padding: 20px 40px;
+    font-size: 13px;
+  }
+
+  .bk-blue{
+    background-color: blue;
     color: white;
     padding: 20px 40px;
     font-size: 13px;
