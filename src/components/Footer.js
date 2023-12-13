@@ -35,9 +35,9 @@ function Footer() {
         <h4>Contact Info</h4>
         <li>Call-centre: 1 (323) 938-5798</li>
         <li>Fax: 1 (888) 637-7262</li>
-        <li>Email: info@styleixthemes.com</li>
+        <li>Email: info@pandaestate.com</li>
         <li>1840 E Garvey Avenue Street</li>
-        <li>West Covina, CA 91791, U.S.</li>
+        <li>West Covina, CA 91791, Abuja.</li>
         <li>Monday – Friday: 9:00am – 9:00pm</li>
       </div>
 

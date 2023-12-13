@@ -39,7 +39,7 @@ function Contact() {
             </p>
 
             <div className='hq'>
-                <strong className='bk-blue'>New York Office</strong>
+                <strong className='bk-blue'>Lagos Office</strong>
               </div>
             <p>
               Morbi mollis elit vitae elit molestie lobortis. Cras eu purus ipsum. Aliquam et ullamcorper nisl. Nam sem justo,

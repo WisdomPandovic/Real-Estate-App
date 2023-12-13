@@ -1,8 +1,11 @@
-// src/components/BlogList.js
-
+import Nav from '../Nav';
+import Footer from '../Footer';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogPosts.css';
+
+const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+const unsplashApiUrl = 'https://source.unsplash.com/400x200/?realestate';
 
 const BlogPosts = () => {
   const [posts, setPosts] = useState([]);
@@ -10,11 +13,21 @@ const BlogPosts = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const response = await fetch(apiUrl);
         const data = await response.json();
-        console.log(data)
-        setPosts(data);
-      
+        
+        const updatedPosts = await Promise.all(data.slice(0, 10).map(async (post) => {
+          const imageResponse = await fetch(unsplashApiUrl);
+          const imageUrl = imageResponse.url;
+          
+          return {
+            ...post,
+            imageUrl,
+            date: new Date().toLocaleDateString(),
+          };
+        }));
+        
+        setPosts(updatedPosts);
       } catch (error) {
         console.error('Error fetching blog posts:', error);
       }
@@ -24,21 +37,22 @@ const BlogPosts = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Blog Posts</h2>
-      <ul className='blog-post'>
+    <div className='bck-whitesmoke'>
+      <Nav />
+      <div className='blog-page'>
+      <h2 className='blog-post-header'>Blog Posts</h2>
+      <div className='blog-posts'>
         {posts.map(post => (
-          <li key={post.id}>
-            <Link to={`/blog/${post.id}`}>
-              <img src={post.thumbnailUrl} alt={post.title}   style={{ width: '100px', height: '100px', objectFit: 'cover' }}/>
-              <div>
-                <h3>{post.title}</h3>
-                <p>Date: {post.date}</p>
-              </div>
-            </Link>
-          </li>
+          <div key={post.id}>
+            <img src={post.imageUrl} alt="Blog Image" />
+            <h2>{post.title}</h2>
+            <p>Published on: {post.date}</p>
+            <button>View Post</button>
+          </div>
         ))}
-      </ul>
+      </div>
+      </div>
+      <Footer />
     </div>
   );
 };
